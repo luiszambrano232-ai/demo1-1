@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3ef">
+  <meta name="description" content="Demo comercial para Zury's Cafetería: tortas a pedido, catálogo y carrito.">
+  <title>Zury's Cafetería | Tortas a pedido</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="topbar">Tortas a pedido · Retiro en Maipú · Demo comercial</div>
+
+  <header class="header" id="inicio">
+    <div class="shell nav">
+      <a class="logo" href="#inicio" aria-label="Inicio">
+        <span class="logo-main">Zury's</span>
+        <span class="logo-sub">CAFETERÍA</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="#tortas">Tortas</a>
+        <a href="#como-funciona">Cómo comprar</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <button class="cart-link" id="openCart">Carrito <span id="cartCount">0</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media">
+        <img src="https://img02.restaurantguru.com/cf5a-La-Cafeteria-de-Zurys-Maipu-dishes.jpg" alt="Tortas y vitrina de Zury's Cafetería">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="shell hero-content">
+        <span class="kicker light">Hecho para celebrar</span>
+        <h1>Tortas con cariño,<br><em>momentos para recordar.</em></h1>
+        <p>Elige tu favorita, personalízala y arma tu pedido en pocos pasos.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#tortas">Ver tortas</a>
+          <a class="btn btn-outline" href="#como-funciona">Cómo comprar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro shell">
+      <div class="intro-title">
+        <span class="kicker">Nuestra selección</span>
+        <h2>Un antojo para cada ocasión.</h2>
+      </div>
+      <p>Una propuesta simple, visual y fácil de usar desde Instagram o WhatsApp. Productos y precios de demostración.</p>
+    </section>
+
+    <section class="catalog shell" id="tortas">
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">Todas</button>
+        <button class="filter" data-filter="chocolate">Chocolate</button>
+        <button class="filter" data-filter="frutal">Frutales</button>
+        <button class="filter" data-filter="clasica">Clásicas</button>
+        <button class="filter" data-filter="especial">Especiales</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="feature" id="nosotros">
+      <div class="shell feature-grid">
+        <div class="feature-copy">
+          <span class="kicker">Zury's Cafetería</span>
+          <h2>Una pausa rica, cercana y especial.</h2>
+          <p>Esta demo toma como referencia la identidad pública de Zury's y la lleva a una experiencia de compra limpia: menos ruido, mejores fotos y acciones claras.</p>
+          <a href="#tortas" class="text-link">Explorar catálogo <span>→</span></a>
+        </div>
+        <div class="feature-image">
+          <img src="https://img02.restaurantguru.com/c1de-La-Cafeteria-de-Zurys-Maipu-interior.jpg" alt="Interior de Zury's Cafetería">
+        </div>
+      </div>
+    </section>
+
+    <section class="steps" id="como-funciona">
+      <div class="shell">
+        <div class="section-head">
+          <span class="kicker">Comprar es simple</span>
+          <h2>Tu torta en 3 pasos.</h2>
+        </div>
+        <div class="steps-grid">
+          <article><span>01</span><h3>Elige</h3><p>Explora el catálogo y agrega tus favoritas.</p></article>
+          <article><span>02</span><h3>Personaliza</h3><p>Indica fecha, dedicatoria y detalles especiales.</p></article>
+          <article><span>03</span><h3>Confirma</h3><p>Envía el pedido por WhatsApp y coordina la entrega.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery shell">
+      <div class="section-head inline">
+        <div><span class="kicker">Un vistazo</span><h2>Hecho para tentar.</h2></div>
+        <a href="#" class="text-link">@TU_INSTAGRAM <span>↗</span></a>
+      </div>
+      <div class="gallery-grid">
+        <img src="https://img02.restaurantguru.com/cf18-La-Cafeteria-de-Zurys-Maipu-chocolate-cake.jpg" alt="Torta de chocolate">
+        <img src="https://img02.restaurantguru.com/cae0-La-Cafeteria-de-Zurys-Maipu-red-velvet-cake.jpg" alt="Red velvet">
+        <img src="https://img02.restaurantguru.com/c652-La-Cafeteria-de-Zurys-Maipu-meals.jpg" alt="Preparaciones">
+        <img src="https://img02.restaurantguru.com/c478-La-Cafeteria-de-Zurys-Maipu-food.jpg" alt="Tortas y café">
+      </div>
+    </section>
+
+    <section class="cta" id="contacto">
+      <div class="shell cta-inner">
+        <div>
+          <span class="kicker light">¿Tienes una celebración?</span>
+          <h2>Hagamos algo rico.</h2>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-light" href="https://wa.me/56911111111" target="_blank" rel="noopener">WhatsApp demo</a>
+          <a class="btn btn-outline" href="#tortas">Ver catálogo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div>
+        <div class="logo footer-logo"><span class="logo-main">Zury's</span><span class="logo-sub">CAFETERÍA</span></div>
+        <p>Demo comercial de venta de tortas con carrito de compras.</p>
+      </div>
+      <div><strong>Explora</strong><a href="#tortas">Tortas</a><a href="#como-funciona">Cómo comprar</a><a href="#nosotros">Nosotros</a></div>
+      <div><strong>Redes</strong><a href="#">Instagram · @TU_INSTAGRAM</a><a href="#">TikTok · @TU_TIKTOK</a><a href="#">Facebook · TU_FACEBOOK</a></div>
+      <div><strong>Contacto</strong><span>Av. Pajaritos 3926, Maipú</span><a href="https://wa.me/56911111111">+56 9 1111 1111</a></div>
+    </div>
+    <div class="shell footer-bottom">© 2026 Zury's Cafetería · Demo comercial</div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head">
+      <div><small>Tu pedido</small><h3>Carrito</h3></div>
+      <button id="closeCart" aria-label="Cerrar">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><h4>Tu carrito está vacío</h4><p>Agrega una torta para comenzar.</p></div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-total"><span>Total estimado</span><strong id="cartTotal">$0</strong></div>
+      <label for="orderDate">Fecha deseada</label>
+      <input type="date" id="orderDate">
+      <label for="orderNote">Dedicatoria / observaciones</label>
+      <textarea id="orderNote" rows="3" placeholder="Ej: Feliz cumpleaños Sofía"></textarea>
+      <button class="btn btn-dark checkout" id="checkoutBtn">Enviar por WhatsApp</button>
+      <small>Demo: número genérico. No procesa pagos.</small>
+    </div>
+  </aside>
+  <div class="toast" id="toast"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
